@@ -1,3 +1,29 @@
-<%= link_to "Sign Up", new_user_registration_path %>
-<%= link_to "Sign In", new_user_session_path %>
-<h1>Oler</h1>
+<section id="serie">
+	<nav>
+		<span class="logo"> SerieFlix </span>
+		<%= link_to_unless_current "Séries" %>
+		<a href="#"> Minhas Séries </a>
+		<a href=""></a>
+
+		<% if user_signed_in? %>
+			<%= link_to "Logout", destroy_user_session_path %>
+		<% else %>
+			<%= link_to "Sign Up", new_user_registration_path %>
+			<%= link_to "Sign In", new_user_session_path %>
+		<% end %>
+	</nav>
+
+	<div class="filtro">
+		<h3>séries</h3>
+		<%= form_tag series_index_path do%>
+			<%= text_field_tag :filtro, nil, placeholder: "Pesquisa por nome" %>
+		<% end %>
+	</div>
+	<ul class="serie-list">
+		<% @series.each do |serie| %>
+			<li>
+				<%= serie.title %>
+			</li>
+		<% end %>
+	</ul>
+</section>
