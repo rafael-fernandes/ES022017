@@ -12,8 +12,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: "es022017"
-  password: "password"
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   # For details on connection pooling, see Rails configuration guide
@@ -22,6 +20,8 @@ default: &default
 
 development:
   <<: *default
+  username: "es022017"
+  password: "password"
   database: es022017_development
   host: localhost
 
@@ -30,6 +30,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  username: "es022017"
+  password: "password"
   database: es022017_test
   host: localhost
 
