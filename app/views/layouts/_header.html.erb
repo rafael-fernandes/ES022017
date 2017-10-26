@@ -1,0 +1,21 @@
+<header class="serie-header">
+	<nav>
+		<%= image_tag "serieflix-logo.png", alt: "serieFlix logo", class: "logo"%>
+		<% if user_signed_in? %>
+			<%= link_to_unless_current "Séries" %>
+			<a href="#"> Minhas Séries </a>
+			<a href=""></a>
+			<%= link_to "Logout", destroy_user_session_path %>
+		<% else %>
+
+			<ul class="main-nav">
+				<li>
+					<%= link_to "Entrar", new_user_session_path %>
+				</li>
+				<li>
+					<%= link_to "Cadastrar", new_user_registration_path %>
+				</li>
+			</ul>
+		<% end %>
+	</nav>
+</header>

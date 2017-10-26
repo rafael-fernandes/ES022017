@@ -1,0 +1,52 @@
+.login-background {
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(image_path("4090.jpg"));
+	// background-attachment:fixed;
+	height: 70vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.login-form {
+	position: absolute;
+	width: 500px;
+	background : white;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	h1,h2,h3 {
+		margin: 0;
+		padding: 25px;
+		color: #555;
+		border-bottom: 1px solid #ccc;
+		background: #fdfdfd;
+	}
+
+	.campos {
+		padding: 15px;
+		label {
+			margin: 10px 8px 5px;
+			color: #aaa;
+		}
+
+		input[type=email], input[type=password] {
+			border: 1px solid #bbb;
+			border-radius: 10px;
+			width: 100%;
+			min-height: 35px;
+			padding: 0 15px;
+		}
+
+		.action-submit {
+			margin-top: 25px;
+			text-align: center;
+		}
+	}
+
+	.btn-submit {
+		background: #349886;
+		color: white;
+		width: 100%;
+	}
+
+}

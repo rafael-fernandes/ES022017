@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ES022017</title>
-    <%= csrf_meta_tags %>
+	<head>
+		<title>ES022017</title>
+		<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-  </head>
-
-  <body>
-    <header class="serie-header">
-    </header>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-    <%= yield %>
-  </body>
+		<%= stylesheet_link_tag    'application', media: 'all' %>
+	</head>
+	<body>
+		<section class="main-section">
+			<%= render "layouts/header" %>
+			<% if notice %>
+				<p class="alert alert-success"><%= notice %></p>
+			<% end %>
+			<% if alert %>
+				<p class="alert alert-danger"><%= alert %></p>
+			<% end %>
+			<%= yield %>
+		</section>
+	</body>
 </html>
