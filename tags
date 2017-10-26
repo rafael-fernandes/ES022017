@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddNomeToUsers	db/migrate/20171026184639_add_nome_to_users.rb	/^class AddNomeToUsers < ActiveRecord::Migration[5.0]$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:ES022017
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
+CreateSeries	db/migrate/20171018024107_create_series.rb	/^class CreateSeries < ActiveRecord::Migration[5.0]$/;"	c
+DeviseCreateUsers	db/migrate/20171018014610_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration[5.0]$/;"	c
+ES022017	config/application.rb	/^module ES022017$/;"	m
+Serie	app/models/serie.rb	/^class Serie < ApplicationRecord$/;"	c
+SerieTest	test/models/serie_test.rb	/^class SerieTest < ActiveSupport::TestCase$/;"	c
+SeriesController	app/controllers/series_controller.rb	/^class SeriesController < ApplicationController$/;"	c
+SeriesControllerTest	test/controllers/series_controller_test.rb	/^class SeriesControllerTest < ActionDispatch::IntegrationTest$/;"	c
+SeriesHelper	app/helpers/series_helper.rb	/^module SeriesHelper$/;"	m
+User	app/models/user.rb	/^class User < ApplicationRecord$/;"	c
+Users	app/controllers/users/confirmations_controller.rb	/^class Users::ConfirmationsController < Devise::ConfirmationsController$/;"	c
+Users	app/controllers/users/omniauth_callbacks_controller.rb	/^class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController$/;"	c
+Users	app/controllers/users/passwords_controller.rb	/^class Users::PasswordsController < Devise::PasswordsController$/;"	c
+Users	app/controllers/users/registrations_controller.rb	/^class Users::RegistrationsController < Devise::RegistrationsController$/;"	c
+Users	app/controllers/users/sessions_controller.rb	/^class Users::SessionsController < Devise::SessionsController$/;"	c
+Users	app/controllers/users/unlocks_controller.rb	/^class Users::UnlocksController < Devise::UnlocksController$/;"	c
+change	db/migrate/20171018014610_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+change	db/migrate/20171018024107_create_series.rb	/^  def change$/;"	f	class:CreateSeries
+change	db/migrate/20171026184639_add_nome_to_users.rb	/^  def change$/;"	f	class:AddNomeToUsers
+index	app/controllers/series_controller.rb	/^  def index$/;"	f	class:SeriesController
+system!	bin/setup	/^def system!(*args)$/;"	f
+system!	bin/update	/^def system!(*args)$/;"	f

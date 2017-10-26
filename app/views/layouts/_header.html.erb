@@ -2,10 +2,20 @@
 	<nav>
 		<%= image_tag "serieflix-logo.png", alt: "serieFlix logo", class: "logo"%>
 		<% if user_signed_in? %>
-			<%= link_to_unless_current "Séries" %>
-			<a href="#"> Minhas Séries </a>
-			<a href=""></a>
-			<%= link_to "Logout", destroy_user_session_path %>
+			<ul class="main-nav">
+				<li>
+					<%= link_to_unless_current "Séries" %>
+				</li>
+				<li>
+					<a href="#"> Minhas Séries </a>
+				</li>
+				<li>
+					<a href=""></a>
+				</li>
+				<li>
+					<%= link_to "Logout", destroy_user_session_path %>
+				</li>
+			</ul>
 		<% else %>
 
 			<ul class="main-nav">
