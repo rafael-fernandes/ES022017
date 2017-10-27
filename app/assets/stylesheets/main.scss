@@ -17,35 +17,11 @@
 
 
 section {
-	padding: 80px 0;
+	padding: 5px 0;
 }
 
 .box{
 	padding: 1%;
-}
-
-
-/* Icons */
-.icon-big{
-	font-size: 3.5em;
-	display: block;
-	color:#e67e22;
-	margin-bottom: 10px;
-	text-align: center;
-}
-
-.icon-small {
-	display: inline-block;
-	width: 30px;
-	text-align: center;
-	height: auto;
-	color:#e67e22;
-	font-size: 1.3em;
-	margin-right: 10px;
-	/* how to align text and icon */
-	line-height: 130%;
-	vertical-align: middle;
-	margin-top: -5px;
 }
 
 /* headings */
@@ -58,17 +34,6 @@ h3{
 }
 
 /* paragraphs */
-.long-copy{
-	line-height: 145%;
-	width: 70%;
-	margin: 0 auto;
-}
-
-.box p{
-	font-size: .9em;
-	line-height: 145%;
-}
-
 .box img{
 	width: 100%;
 	height: auto;
@@ -96,7 +61,7 @@ h3{
 	nav {
 		@extend .clear-fix !optional;
 		diplay: block;
-		margin: 0 115px;
+		margin: 0 155px;
 	}
 }
 
@@ -106,7 +71,6 @@ h3{
 	float: left;
 	margin-top: 5px;
 }
-
 
 .main-nav{
 	float: right;
@@ -137,3 +101,23 @@ h3{
 	/* font-size: .9em; */
 }
 
+/*******   FOOTER    *******/
+
+footer#footer {
+	@extend .clear-fix !optional;
+	background: #3db39e;
+	padding: 5px 155px 0;
+	color: white;
+	min-height: 50px;
+	p {
+		margin-top: 10px;
+	}
+	.logo-foot{
+		height: 60px;
+		width: auto;
+	}
+	span#span-sobre {
+		float: right;
+		margin-top: 18px;
+	}
+}

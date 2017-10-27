@@ -4,7 +4,7 @@
 		<title>ES022017</title>
 		<%= csrf_meta_tags %>
 
-		<%= stylesheet_link_tag    'application', media: 'all' %>
+		<%= stylesheet_link_tag 'application', media: 'all' %>
 	</head>
 	<body>
 		<section class="main-section">
@@ -16,6 +16,8 @@
 				<p class="alert alert-danger"><%= alert %></p>
 			<% end %>
 			<%= yield %>
+
+			<%= render "layouts/footer" %>
 		</section>
 	</body>
 </html>

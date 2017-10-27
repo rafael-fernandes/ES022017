@@ -1,16 +1,23 @@
-<section id="serie">
-
-	<div class="filtro">
-		<h3>séries</h3>
-		<%= form_tag series_index_path, method: :get do%>
-			<%= text_field_tag :filtro, nil, placeholder: "Pesquisa por nome" %>
-		<% end %>
-	</div>
-	<ul class="serie-list">
-		<% @series.each do |serie| %>
-			<li>
-				<%= serie.title %>
-			</li>
-		<% end %>
-	</ul>
+<section id="serie-home">
+	<section id="serie-head">
+		<h1>Nunca mais perca sua série favorita</h3>
+		<p>com a SerieFlix, você escolhe suas séries preferidas e sempre será notificado quando há um novo episódio</p>
+	</section>
+	<section id="serie-promo">
+		<ul class="serie-list">
+			<% @series.each do |serie| %>
+				<li>
+					<%= serie.title %>
+				</li>
+			<% end %>
+		</ul>
+	</section>
 </section>
+
+
+
+		<%# <div class="filtro"> %>
+		<%# 	<%= form_tag series_index_path, method: :get do %1> %>
+		<%# 		<%= text_field_tag :filtro, nil, placeholder: "Pesquisa por nome" %1> %>
+		<%# 	<% end %1> %>
+		<%# </div> %>

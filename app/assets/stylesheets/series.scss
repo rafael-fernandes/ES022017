@@ -1,3 +1,31 @@
 // Place all the styles related to the series controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+section#serie-home{
+	padding: 0;
+}
+
+section#serie-head {
+	@extend .clear-fix !optional;
+	padding: 65px 0 0;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(image_path("q6gfkbv.jpg"));
+	// background-attachment:fixed;
+	height: 45vh;
+	min-height: 250px;
+	background-size: cover;
+	background-position: center;
+
+	h1, h2, h3 {
+		margin: 0;
+		color: #f5f5f5;
+		padding-bottom: 25px;
+	}
+	p {
+		color: #ddd;
+		font-size: 2rem;
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
