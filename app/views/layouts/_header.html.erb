@@ -10,7 +10,9 @@
 					<a href="#"> Minhas Séries </a>
 				</li>
 				<li>
-					<a href=""></a>
+					<%= link_to edit_user_registration_path do %>
+						<%= image_tag gravatar_url(current_user.email, 64), alt: "Perfil", class: "img-gravatar", title: "Perfil" %>
+					<% end %>
 				</li>
 				<li>
 					<%= link_to "Logout", destroy_user_session_path %>
