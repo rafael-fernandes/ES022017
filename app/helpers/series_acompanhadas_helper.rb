@@ -1,0 +1,2 @@
+module SeriesAcompanhadasHelper
+end
