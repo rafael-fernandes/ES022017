@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<section id="serie-home">
+			<section id="serie-head">
+				<h1>Minhas series</h3>
+			</section>
+			<section id="serie-promo">
+				<ul class="serie-list">
+					<% @series_acompanhadas.each do |serie| %>
+						<li>
+							<%= serie.title %>
+							<%=	link_to	'Remover Serie',	remove_from_list_path(@series_acompanhadas) %>
+						</li>
+					<% end %>
+				</ul>
+			</section>
+		</section>
+	</body>
+</html>
