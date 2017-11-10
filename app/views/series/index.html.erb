@@ -8,6 +8,13 @@
 			<% @series.each do |serie| %>
 				<li>
 					<%= serie.title %>
+					<% if is_followed?(serie) %>
+						<h4>Acompanhado</h4>
+						<%= link_to "deixar de acompanhar", delete_list_serie_path(serie) %>
+					<% else %> 
+						<h4>Não Acompanhado</h4>
+						<%= link_to "acompanhar", add_list_serie_path(serie) %>
+					<% end %>
 				</li>
 			<% end %>
 		</ul>
