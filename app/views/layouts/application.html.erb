@@ -7,8 +7,9 @@
 		<%= stylesheet_link_tag 'application', media: 'all' %>
 	</head>
 	<body>
+		<%= render "layouts/header" %>
 		<section class="main-section">
-			<%= render "layouts/header" %>
+			
 			<% if notice %>
 				<p class="alert alert-success"><%= notice %></p>
 			<% end %>
@@ -17,7 +18,8 @@
 			<% end %>
 			<%= yield %>
 
-			<%= render "layouts/footer" %>
 		</section>
+
+		<%= render "layouts/footer" %>
 	</body>
 </html>

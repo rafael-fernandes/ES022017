@@ -29,3 +29,32 @@ section#serie-head {
 	}
 }
 
+section#serie-promo {
+	width: 70%;
+	margin: 0 auto;
+	
+	.serie {
+		margin-bottom: 3em;
+
+		.img {
+			width: 100%;
+		}
+
+		.button-like {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 3em;
+			background: #3db39e;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	
+	.filtro {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 3em 0;
+	}
+}

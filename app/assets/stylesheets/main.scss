@@ -3,16 +3,11 @@
 }
 
 .clear-fix:after {
-	content: '.';
+	content: '';
 	clear: both;
 	display: block;
 	height: 0;
 	visibility: hidden;
-}
-
-.row{
-	max-width: 1280px;
-	margin: 0 auto;
 }
 
 
@@ -42,11 +37,8 @@ h3{
 /**** MAIN SECTION  */
 
 .main-section {
-	@extend .clear-fix !optional;
-	width: 100%;
-	max-width: 1440px;
-	padding: 5px 0;
-	margin: 5px auto;
+	padding: 0;
+	min-height: calc(100vh - 10em - 2px);
 }
 
 /****  HEADER  ****/
@@ -54,27 +46,26 @@ h3{
 .serie-header {
 	@extend .clear-fix !optional;
 	background: white;
-	width: 100%;
 	border: 1px solid #ccc;
 
 	nav {
-		@extend .clear-fix !optional;
-		diplay: block;
-		margin: 0 155px;
+		width: 70%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 4em;
 	}
 }
 
 .logo{
 	height: 50px;
-	width: auto;
-	float: left;
-	margin-top: 25px;
 }
 
 .main-nav{
-	float: right;
 	list-style: none;
-	margin-top: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 .main-nav li{
@@ -102,24 +93,23 @@ h3{
 
 .img-gravatar {
 	border-radius: 50%;
+	width: 3em;
 }
 /*******   FOOTER    *******/
 
 footer#footer {
-	@extend .clear-fix !optional;
 	background: #3db39e;
-	padding: 5px 155px 0;
-	color: white;
-	min-height: 50px;
-	p {
-		margin-top: 10px;
-	}
-	.logo-foot{
-		height: 60px;
-		width: auto;
-	}
-	span#span-sobre {
-		float: right;
-		margin-top: 18px;
+	
+	.footer-container {
+		width: 70%;
+		margin: 0 auto;
+		color: white;
+		height: 6em;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.logo-foot{
+			height: 60px;
+		}
 	}
 }
