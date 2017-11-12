@@ -1,14 +1,14 @@
 .login-background {
 	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(image_path("4090.jpg"));
 	// background-attachment:fixed;
-	height: 70vh;
+	min-height: calc(100vh - 10em - 2px);
 	background-size: cover;
 	background-position: center;
 }
 
 .login-form {
 	position: absolute;
-	width: 500px;
+	width: 30%;
 	background : white;
 	top: 40%;
 	left: 50%;

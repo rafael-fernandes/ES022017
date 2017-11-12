@@ -1,32 +1,35 @@
 <section id="serie-home">
+
 	<section id="serie-head">
 		<h1>Nunca mais perca sua série favorita</h3>
 		<p>com a SerieFlix, você escolhe suas séries preferidas e sempre será notificado quando há um novo episódio</p>
 	</section>
+
 	<section id="serie-promo">
-		<ul class="serie-list">
-			<% @series.each do |serie| %>
-				<li>
-					<%= serie.title %>
-					<% if is_followed?(serie) %>
-						<h4>Acompanhado</h4>
-						<%= link_to "deixar de acompanhar", delete_list_serie_path(serie) %>
-					<% else %> 
-						<h4>Não Acompanhado</h4>
-						<%= link_to "acompanhar", add_list_serie_path(serie) %>
-					<% end %>
-				</li>
+
+		<div class="filtro">
+			<h2>Séries</h2>
+			<%= form_tag root_path, method: :get, class: 'form-inline' do %>
+				<%= text_field_tag :filtro, nil, placeholder: "Pesquisa por nome", class: 'form-control' %>
+				<%= button_tag "Pesquisar", class: 'btn btn-primary' %>
 			<% end %>
-		</ul>
+		</div>
+
+		<% @series.each_slice(4) do |slice_of_four| %>
+			<div class="row">
+				<% slice_of_four.each do |serie| %>
+					<div class="col-sm-3">
+						<%= render serie, serie:serie %>
+					</div>
+				<% end %>
+			</div>
+		<% end %>
+
+		<%= paginate @series %>
 	</section>
+	
 </section>
 
 
 
-		<%# <div class="filtro"> %>
-		<%# 	<%= form_tag series_index_path, method: :get do %1> %>
-		<%# 		<%= text_field_tag :filtro, nil, placeholder: "Pesquisa por nome" %1> %>
-		<%# 	<% end %1> %>
-		<%# </div> %>
-
-<%= paginate @series %>
+		
