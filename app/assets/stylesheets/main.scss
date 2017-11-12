@@ -10,6 +10,11 @@
 	visibility: hidden;
 }
 
+.alert {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 section {
 	padding: 5px 0;
