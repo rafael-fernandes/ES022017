@@ -131,6 +131,12 @@ O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/vie
 ---
 
 ## Decisões de Projeto
+obs: Como o cliente já havia deixado bastante claro como ele queria o produto, a maior parte das decisões tomadas foram de gerenciamento, como a divisão de tarefas por exemplo.
+1) No meio do projeto foi verificado a não necessidade de incluir filmes para serem acompanhados devido ao fato de filmes não ser algo que você assiste novos episódioss periodicamente como séries. Essa decisão foi apoiada pelo cliente.
+
+2) Para testes decidimos fazer mais de um tipo. Majoritariamente BDD com Tdd somente onde o rails não nos fornece features já prontas.
+
+
 
 ---
 
