@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :serie_acompanhadas
-  has_many :series, through: :serie_acompanhadas, source: :serie
+  belongs_to :series_list
 
+  validates :name, presence: true
 end
