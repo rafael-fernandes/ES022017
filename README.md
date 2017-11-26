@@ -1,6 +1,10 @@
 ## Stakeholders
 
-O usuário, stakeholder mais presente, possui as dores de não conseguir acompanhar todas as suas séries favoritas e nós desenvolvemos a SerieFlix, uma plataforma online de gestão e acompanhamento de séries, que beneficia o usuário com funcionalidades de marcação de séries favoritas, notificações de novos episódios, acompanhamento do progresso da série, dentre outras para garantir que o usuário nunca mais perca um episódio. A SerieFlix é ideal para fãs de séries que querem se organizar e se manter bem informados.
+O cliente deseja uma ferramenta que auxilie cada usuário a acompanhar as séries televisivas de seu interesse. Todo usuário poderá criar um perfil próprio, após preencher alguns dados no formulário, a conta será criada e o usuário usará seu email e sua senha para acessá-la. Através de sua conta o usuário poderá selecionar as séries que acompanha no momento ou que tem intenção de acompanhar, após a seleção ele será notificado sobre novos episódios e poderá visualizar seu progresso em cada série marcada. O usuário também terá a opção de visualizar um calendário (mensal ou semanal) contendo os lançamentos de seu interesse.
+
+Para resolver o problema do cliente a equipe de desenvolvedores produzirá um sistema web utilizando o framework Ruby on Rails e as linguagens de programação Ruby, HTML5 e CSS3. Para hospedar o sistema em nuvem teremos o serviço de hospedagem Heroku e o sistema de gerenciamento PostgreSQL para banco de dados. Como não é necessária uma interface rebuscada, o layout será implementado utilizando Bootstrap, de modo que o sistema seja simples e eficiente. O processo de desenvolvimento será feito de forma iterativa e incremental seguindo preceitos da metodologia ágil.
+
+Os futuros usuários do sistema poderão acompanhar suas séries preferidas de maneira mais fácil. Receber alertas sobre episódios novos garante que não esqueçam de assisti-los e podem se programar para futuros lançamentos pelo calendário. Poderão também acompanhar seu progresso, com isso não esquecem em qual episódio pararam e ficam cientes de quanto tempo falta para assistem todos os episódios e temporadas desejadas. Ideal para fãs de seriados que querem organizar-se e manter-se bem informados.
 
 ---
 
