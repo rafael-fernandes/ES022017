@@ -142,6 +142,10 @@ obs: Como o cliente já havia deixado bastante claro como ele queria o produto, 
 
 ## Lições Aprendidas
 
+Houveram pequenos desvios durante o andamento do projeto, algumas sprints não conseguiram ser entregues dentro do prazo, porém nada muito significativo. Estes desvios aconteceram porque algumas tarefas foram subestimadas e outras superestimadas. Alguns poderiam ter sido evitados prevendo melhor a dificuldade das tarefas e nos planejando melhor. Mas em certos casos nós não conseguimos fazer esta previsão por falta de experiência e não por falta de atenção. Outro problema foi a falha de comunicação entre a equipe, em uma ocasião um desenvolvedor entendeu incorretamente uma funcionalidade e esta precisou ser refeita. Ocorreu uma mudança no plano do projeto após o início da execução. Originalmente o sistema deveria lidar com filmes e séries, depois de conversar com o cliente decidimos remover os filmes porque não fazia sentido para a ideia do projeto, portanto a equipe decidiu que seria melhor se fossem usadas somente séries de tv. Algumas funcionalidades são mais complexas do que parecem ser portanto é preciso ter mais atenção ao lidar com o projeto, aproveitar melhor as reuniões e melhorar a comunicação entre a equipe.
+Faríamos novamente em projetos futuros: code meetings, canal de comunicação da equipe no slack, uso do framework Rails e reuniões semanais.
+Não faríamos novamente em projetos futuros: falhas de comunicação, falta de noção ao mensurar dificuldade dos requisitos e falta de noção ao planejar as sprints.
+
 ---
 
 ## Aceite do Cliente
