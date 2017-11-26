@@ -10,30 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171026204034) do
+ActiveRecord::Schema.define(version: 20171126201300) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "episodios", force: :cascade do |t|
-    t.string   "nome"
-    t.integer  "numero"
-    t.date     "data_lancamento"
-    t.integer  "temporada_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-    t.index ["temporada_id"], name: "index_episodios_on_temporada_id", using: :btree
+  create_table "episodes", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "number"
+    t.date     "release_date"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "season_id"
+    t.index ["season_id"], name: "index_episodes_on_season_id", using: :btree
   end
 
-  create_table "serie_acompanhadas", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "status"
-    t.integer  "progressao"
-    t.integer  "serie_id"
+  create_table "seasons", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["serie_id"], name: "index_serie_acompanhadas_on_serie_id", using: :btree
-    t.index ["user_id"], name: "index_serie_acompanhadas_on_user_id", using: :btree
+    t.integer  "series_id"
+    t.index ["series_id"], name: "index_seasons_on_series_id", using: :btree
   end
 
   create_table "series", force: :cascade do |t|
@@ -44,13 +42,9 @@ ActiveRecord::Schema.define(version: 20171026204034) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "temporadas", force: :cascade do |t|
-    t.integer  "serie_id"
-    t.string   "nome"
-    t.integer  "numero"
+  create_table "series_lists", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["serie_id"], name: "index_temporadas_on_serie_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -66,9 +60,14 @@ ActiveRecord::Schema.define(version: 20171026204034) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "nome"
+    t.string   "name"
+    t.integer  "series_list_id"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.index ["series_list_id"], name: "index_users_on_series_list_id", using: :btree
   end
 
+  add_foreign_key "episodes", "seasons"
+  add_foreign_key "seasons", "series"
+  add_foreign_key "users", "series_lists"
 end
