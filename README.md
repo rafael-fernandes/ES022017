@@ -135,6 +135,7 @@ No entanto o cucumber necessita de outras ferramentas de suporte como o watir, r
 
 ## Execução dos Testes
    Executamos um teste com o arquivo .feature. Nesse teste o Scenario: login e tínhamos Given: Eu estou na tela de login When: eu preencho corretamente o login e senha Then: eu sou direcionando a tela inicial.  
+
 ---
 
 ## Uso de Técnicas
