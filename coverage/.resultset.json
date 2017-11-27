@@ -1,0 +1,150 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/rafael/ES022017/app/controllers/static_pages_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/rafael/ES022017/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/helpers/static_pages_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/models/episode_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/rafael/ES022017/app/models/episode.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/models/favorite_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null
+      ],
+      "/home/rafael/ES022017/app/models/favorite.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/models/season_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/rafael/ES022017/app/models/season.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/models/series_list_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null
+      ],
+      "/home/rafael/ES022017/app/models/series_list.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/models/series_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        2,
+        null
+      ],
+      "/home/rafael/ES022017/app/models/series.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/rafael/ES022017/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/home/rafael/ES022017/spec/views/static_pages/home.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1511750532
+  }
+}
