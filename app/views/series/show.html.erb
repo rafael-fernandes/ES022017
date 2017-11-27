@@ -1,68 +1,88 @@
-<div class="series pt-4">
-  <div class="container pt-3">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="title">acompanhamento da série</div>
+<div style="padding-bottom: 3em">
+  <div class="series pt-4" style="padding-bottom: 0">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="title">acompanhamento da série</div>
+        </div>
+
+        <div class="col-sm-3"></div>
+
+        <div class="col-sm-3">
+          <div class="back">
+            <%= link_to "voltar à minhas séries", my_series_path, class: "btn btn-info btn-block" %>
+          </div>
+        </div>
       </div>
 
-      <div class="col-sm-3"></div>
+      <div class="row pt-5">
+        <div class="col-sm-6 favorite">
+          <%= image_tag @serie.image_path, width: "100%", height: "auto" %>
+          <div class="episode">
+            S0<%= @serie.seasons.first.number %>E0<%= @serie.seasons.first.episodes.first.number %>
+          </div>
+        </div>
+        <div class="col-sm-6 favorite">
+          <div class="name"><%= @serie.title %></div>
+          <div class="next-episode mt-2">Próximo episódio: hoje</div>
+          <p class="mt-5 mb-0">Seu progresso:</p>
+          <div class="progress mt-2" style="height: 25px">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
 
-      <div class="col-sm-3">
-        <div class="back">
-          <%= link_to "voltar à minhas séries", my_series_path, class: "btn btn-info btn-block" %>
+          <p class="subtitle mt-5 mb-0">Gênero</p>
+          <p>Drama, suspense</p>
+
+          <div class="row mt-4">
+            <div class="col-sm-4">
+              <div class="subtitle">No ar em</div>
+              <p>Canal</p>
+            </div>
+            <div class="col-sm-4">
+              <div class="subtitle">Duração</div>
+              <p>45 min</p>
+            </div>
+            <div class="col-sm-4">
+              <div class="subtitle">Status</div>
+              <p>Em exibição</p>
+            </div>
+          </div>
+          
+          <% if @exists %>
+            <%= link_to add_or_remove_serie_path(@serie), class: "mt-4 btn btn-outline-danger" do %>
+              remover da minha lista  
+              <%= fa_icon "times" %>
+            <% end %>
+          <% else %>
+            <%= link_to add_or_remove_serie_path(@serie), class: "mt-4 btn btn-outline-success" do %>
+              adicionar a minha lista  
+              <%= fa_icon "check-square" %>
+            <% end %>
+          <% end %>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row pt-5">
-      <div class="col-sm-6 favorite">
-        <%= image_tag @serie.image_path, width: "100%", height: "auto" %>
-        <div class="episode">
-          S0<%= @serie.seasons.first.number %>E0<%= @serie.seasons.first.episodes.first.number %>
-        </div>
-      </div>
-      <div class="col-sm-6 favorite">
-        <div class="name"><%= @serie.title %></div>
-        <div class="next-episode mt-2">Próximo episódio: hoje</div>
-        <p class="mt-5 mb-0">Seu progresso:</p>
-        <div class="progress mt-2" style="height: 25px">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
+  <div class="episode-info p-4 mt-4" style="border: 1px solid #dcdcdc; border-left: 0; border-right: 0; border-bottom: 0">
+    <div class="container">
+      <p class="title">Próximo episódio</p>
 
-        <p class="subtitle mt-5 mb-0">Gênero</p>
-        <p>Drama, suspense</p>
-
-        <div class="row mt-4">
-          <div class="col-sm-4">
-            <div class="subtitle">No ar em</div>
-            <p>Canal</p>
-          </div>
-          <div class="col-sm-4">
-            <div class="subtitle">Duração</div>
-            <p>45 min</p>
-          </div>
-          <div class="col-sm-4">
-            <div class="subtitle">Status</div>
-            <p>Em exibição</p>
-          </div>
+      <div class="row">
+        <div class="col-sm-6 pt-2">
+          <div class="subtitle">Nome</div>
+          <%= @serie.seasons.first.episodes.first.name %>
         </div>
-        
-        <% if @exists %>
-          <%= link_to add_or_remove_serie_path(@serie), class: "mt-4 btn btn-outline-danger" do %>
-            remover da minha lista  
-            <%= fa_icon "times" %>
-          <% end %>
-        <% else %>
-          <%= link_to add_or_remove_serie_path(@serie), class: "mt-4 btn btn-outline-success" do %>
-            adicionar a minha lista  
-            <%= fa_icon "check-square" %>
-          <% end %>
-        <% end %>
+        <div class="col-sm-6 pt-2">
+          <div class="subtitle">Data de Lançamento</div>
+          <%= @serie.seasons.first.episodes.first.release_date.strftime('%d/%m/%y') %>
+        </div>
+        <div class="col-sm-12 pt-4">
+          <div class="subtitle">Resumo</div>
+          <%= @serie.seasons.first.episodes.first.summary %>
+        </div>
       </div>
     </div>
-
-    <!-- <div class="episode-info">
-
-    </div> -->
   </div>
 </div>
+
