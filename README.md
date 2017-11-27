@@ -118,31 +118,14 @@ O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/vie
 
 ---
 
-## Testes de Unidade
-   Os testes foram feitos com a ferramenta Cucumber. Este aplicativo permite que se realize testes de aceitação e foi desenvolvido originalmente para Ruby. Para instalação é preciso que se possua o Ruby on Rails em seu computador pois os comandos são efetuados no terminal do Rails. Assim é possível instalar o cucumber com o comando "gem install cucumber".
-No entanto o cucumber necessita de outras ferramentas de suporte como o watir, rspec e capybara que podem ser instaladas com o comando "gem install rspec". 
-
----
-
-## Cobertura dos Testes de Unidade
-   Os testes funcionam da seguinte forma: cria-se um arquivo de extensão .feature que será processado pelo cucumber. A estrutura desse arquivo deve ser constituída de um cabeçalho com a indicação "feature:" e "scenario:". Abaixo deve ser indicado a estrutura Given, When, Then. 
-
----
-
-## Testes de Validação
-
----
-
-## Execução dos Testes
-   Executamos um teste com o arquivo .feature. Nesse teste o Scenario: login e tínhamos Given: Eu estou na tela de login When: eu preencho corretamente o login e senha Then: eu sou direcionando a tela inicial.  
-
----
-
 ## Uso de Técnicas
+
+Trabalhar com o desenvolvimento agil foi uma experiência muito boa. A divisão do trabalho em sprints, levando em conta a disponibilidade e o interesse de cada membro da equipe, junto às prioridades para o projeto funcionar com o minimo possivel, foram muito boas para o andamento do projeto. Graças a essa forma, foi possivel desenvolver algo que atenda a maior quantidade de necessidade do cliente em um intervalo de tempo curto e com a menor quantidade de recursos possivel.
 
 ---
 
 ## Decisões de Projeto
+
 Obs: Como o cliente já havia deixado bastante claro como ele queria o produto, a maior parte das decisões tomadas foram de gerenciamento, como a divisão de tarefas por exemplo.
 
 1) No meio do projeto foi verificado a não necessidade de incluir filmes para serem acompanhados devido ao fato de filmes não ser algo que você assiste novos episódioss periodicamente como séries. Essa decisão foi apoiada pelo cliente.
@@ -160,13 +143,3 @@ Outro problema foi a falha de comunicação entre a equipe, em uma ocasião um d
 Faríamos novamente em projetos futuros: code meetings, canal de comunicação da equipe no slack, uso do framework Rails e reuniões semanais.
 
 Não faríamos novamente em projetos futuros: falhas de comunicação, falta de noção ao mensurar dificuldade dos requisitos e falta de noção ao planejar as sprints.
-
----
-
-## Experiência com o XP e o Scrum
-
-Trabalhar com o desenvolvimento agil foi uma experiência muito boa. A divisão do trabalho em sprints, levando em conta a disponibilidade e o interesse de cada membro da equipe, junto às prioridades para o projeto funcionar com o minimo possivel, foram muito boas para o andamento do projeto. Graças a essa forma, foi possivel desenvolver algo que atenda a maior quantidade de necessidade do cliente em um intervalo de tempo curto e com a menor quantidade de recursos possivel.
-
----
-
-## Aceite do Cliente
