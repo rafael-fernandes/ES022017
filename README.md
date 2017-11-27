@@ -120,10 +120,12 @@ O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/vie
 
 ## Testes de Unidade
    Os testes foram feitos com a ferramenta Cucumber. Este aplicativo permite que se realize testes de aceitação e foi desenvolvido originalmente para Ruby. Para instalação é preciso que se possua o Ruby on Rails em seu computador pois os comandos são efetuados no terminal do Rails. Assim é possível instalar o cucumber com o comando "gem install cucumber".
+No entanto o cucumber necessita de outras ferramentas de suporte como o watir, rspec e capybara que podem ser instaladas com o comando "gem install rspec". 
 
 ---
 
 ## Cobertura dos Testes de Unidade
+   Os testes funcionam da
 
 ---
 
