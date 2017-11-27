@@ -1,4 +1,4 @@
-## Stakeholders
+﻿## Stakeholders
 
 O cliente deseja uma ferramenta que auxilie cada usuário a acompanhar as séries televisivas de seu interesse. Todo usuário poderá criar um perfil próprio, após preencher alguns dados no formulário, a conta será criada e o usuário usará seu email e sua senha para acessá-la. Através de sua conta o usuário poderá selecionar as séries que acompanha no momento ou que tem intenção de acompanhar, após a seleção ele será notificado sobre novos episódios e poderá visualizar seu progresso em cada série marcada. O usuário também terá a opção de visualizar um calendário (mensal ou semanal) contendo os lançamentos de seu interesse.
 
@@ -114,11 +114,18 @@ O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/vie
 
 ---
 
+![](docs/images/rastreabilidade.png)
+
+---
+
 ## Testes de Unidade
+   Os testes foram feitos com a ferramenta Cucumber. Este aplicativo permite que se realize testes de aceitação e foi desenvolvido originalmente para Ruby. Para instalação é preciso que se possua o Ruby on Rails em seu computador pois os comandos são efetuados no terminal do Rails. Assim é possível instalar o cucumber com o comando "gem install cucumber".
+No entanto o cucumber necessita de outras ferramentas de suporte como o watir, rspec e capybara que podem ser instaladas com o comando "gem install rspec". 
 
 ---
 
 ## Cobertura dos Testes de Unidade
+   Os testes funcionam da seguinte forma: cria-se um arquivo de extensão .feature que será processado pelo cucumber. A estrutura desse arquivo deve ser constituída de um cabeçalho com a indicação "feature:" e "scenario:". Abaixo deve ser indicado a estrutura Given, When, Then. 
 
 ---
 
@@ -127,7 +134,7 @@ O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/vie
 ---
 
 ## Execução dos Testes
-
+   Executamos um teste com o arquivo .feature. Nesse teste o Scenario: login e tínhamos Given: Eu estou na tela de login 
 ---
 
 ## Uso de Técnicas
