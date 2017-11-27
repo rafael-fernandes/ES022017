@@ -125,7 +125,7 @@ No entanto o cucumber necessita de outras ferramentas de suporte como o watir, r
 ---
 
 ## Cobertura dos Testes de Unidade
-   Os testes funcionam da
+   Os testes funcionam da seguinte forma: cria-se um arquivo de extensão .feature que será processado pelo cucumber. A estrutura desse arquivo deve ser constituída de um cabeçalho com a indicação "feature:" e "scenario:". Abaixo deve ser indicado a estrutura Given, When, Then. 
 
 ---
 
@@ -134,7 +134,7 @@ No entanto o cucumber necessita de outras ferramentas de suporte como o watir, r
 ---
 
 ## Execução dos Testes
-
+   Executamos um teste com o arquivo .feature. Nesse teste o Scenario: login e tínhamos Given: Eu estou na tela de login 
 ---
 
 ## Uso de Técnicas
