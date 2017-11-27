@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127203309) do
+ActiveRecord::Schema.define(version: 20171127204416) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,9 +19,11 @@ ActiveRecord::Schema.define(version: 20171127203309) do
     t.string   "name"
     t.integer  "number"
     t.date     "release_date"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.integer  "season_id"
+    t.string   "episode_season"
+    t.text     "summary"
     t.index ["season_id"], name: "index_episodes_on_season_id", using: :btree
   end
 

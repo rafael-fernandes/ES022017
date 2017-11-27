@@ -6,6 +6,7 @@ RSpec.describe Episode, type: :model do
   it { should validate_presence_of :name }
   it { should validate_presence_of :number }
   it { should validate_presence_of :release_date }
+  it { should validate_presence_of :summary }
 
   it do
     should validate_numericality_of(:number).

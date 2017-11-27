@@ -16,9 +16,9 @@
 
     <div class="row pt-5">
       <div class="col-sm-6 favorite">
-        <%= image_tag "american-horror-story.jpg", width: "100%", height: "auto" %>
+        <%= image_tag @serie.image_path, width: "100%", height: "auto" %>
         <div class="episode">
-          S07E07
+          S0<%= @serie.seasons.first.number %>E0<%= @serie.seasons.first.episodes.first.number %>
         </div>
       </div>
       <div class="col-sm-6 favorite">

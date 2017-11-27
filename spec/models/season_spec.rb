@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Season, type: :model do
   it { should belong_to :series }
+  it { should have_many :episodes }
   
   it { should validate_presence_of :name }
   it { should validate_presence_of :number }
