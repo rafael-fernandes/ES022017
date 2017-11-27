@@ -1,48 +1,45 @@
-<section class="login-background">
+<div style="padding-bottom: 5em">
+	<div class="banner">
+		<%= image_tag gravatar_url(current_user.email, 150), class: "rounded-circle mx-1", style: "margin-top: -4em; border: 2px solid #fff" %>
+			<p class="title mt-3">
+				<%= current_user.name %>
+			</p>
+	</div>
 
-	<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: "login-form" } ) do |f| %>
-		<h2>Editar Perfil</h2>
-		<%= devise_error_messages! %>
+	<div class="d-flex justify-content-center">
+		<div class="card" style="width: 500px; margin-top: -3em; border-radius: 0">
+			<div class="card-body">
+				<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: "login-form" } ) do |f| %>
+					<div class="form-group">
+						<%= f.label :name, "Nome" %>
+							<%= f.text_field :name, autofocus: true, class: "form-control" %>
+					</div>
 
-		<div class="campos">
-			<div class="field">
-				<%= f.label :name %><br />
-				<%= f.text_field :name, autofocus: true %>
-			</div>
+					<div class="form-group">
+						<%= f.label :email %>
+							<%= f.email_field :email, autofocus: true, class: "form-control" %>
+					</div>
 
-			<div class="field">
-				<%= f.label :email %><br />
-				<%= f.email_field :email, autofocus: true %>
-			</div>
-			
-			<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-				<div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-			<% end %>
-			
-			<div class="field">
-				<%= f.label :password, "Nova Senha" %>
-				<% if @minimum_password_length %>
-					<em>(Mínimo <%= @minimum_password_length %> caracteres)</em>
+					<div class="form-group">
+						<%= f.label :password, "Nova Senha" %>
+							<%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+					</div>
+
+					<div class="form-group">
+						<%= f.label :password_confirmation, "Confirmação de Senha" %><br />
+							<%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+					</div>
+
+					<div class="form-group">
+						<%= f.label :current_password, "Senha Atual" %> <br />
+							<%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
+					</div>
+
+					<div class="actions box">
+						<%= f.submit "salvar meu perfil", class: "btn btn-success btn-block" %>
+					</div>
 				<% end %>
-				<%= f.password_field :password, autocomplete: "off" %>
-			</div>
-			
-			<div class="field">
-				<%= f.label :password_confirmation, "Confirmação de Senha" %><br />
-				<%= f.password_field :password_confirmation, autocomplete: "off" %>
-			</div>
-			
-			<div class="field">
-				<%= f.label :current_password, "Senha Atual" %> <br />
-				<%= f.password_field :current_password, autocomplete: "off" %>
-			</div>
-			
-			<div class="actions box">
-				<%= f.submit "Update", class: "btn btn-success pull-right" %>
-				<%= link_to "Voltar", :back, class: "btn btn-default"  %>
 			</div>
 		</div>
-	<% end %>
-
-
-</section>
+	</div>
+</div>
