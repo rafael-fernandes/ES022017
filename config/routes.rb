@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
   root 'static_pages#home'
 
-  get '/:page' => 'series#index'
+  get '/my-series' => 'static_pages#my_series'
 
   resources :series
   

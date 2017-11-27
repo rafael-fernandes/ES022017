@@ -1,0 +1,58 @@
+<div class="series pt-4">
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="title">minhas séries</div>
+			</div>
+
+			<div class="col-sm-5"></div>
+
+			<div class="col-sm-2">
+				<div class="search">
+					<div class="form-group">
+						<input type="search" class="form-control" placeholder="pesquise por nome">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="filter">
+					<div class="btn-group">
+						<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							ordenar por
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">nome</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<% 20.times do %>
+				<div class="col-sm-3">
+					<div class="series-card -favorite">
+						<div class="photo">
+              <%= link_to series_path(Series.first) do %>
+                <%= image_tag "american-horror-story.jpg" %>
+              <% end %>
+						</div>
+						<div class="episode">
+							S07E07
+            </div>
+            <div class="progress mt-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+						<div class="name">
+							American Horror Story
+						</div>
+						<div class="next-episode">
+							Próximo episódio: amanhã
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
