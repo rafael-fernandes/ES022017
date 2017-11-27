@@ -30,17 +30,19 @@
 		</div>
 
 		<div class="row">
-			<% 20.times do %>
+			<% @series.each do |s| %>
 				<div class="col-sm-3">
 					<div class="series-card">
 						<div class="photo">
-							<%= image_tag "american-horror-story.jpg" %>
+							<%= link_to series_path(s) do %>
+				                <%= image_tag "american-horror-story.jpg" %>
+				            <% end %>
 						</div>
 						<div class="episode">
 							S07E07
 						</div>
 						<div class="name">
-							American Horror Story
+							<%= s.title %>
 						</div>
 						<div class="next-episode">
 							Próximo episódio: amanhã
@@ -48,6 +50,7 @@
 					</div>
 				</div>
 			<% end %>
+			<%= paginate @series %>
 		</div>
 	</div>
 </div>

@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="col-sm-6 favorite">
-        <div class="name">American Horror Story</div>
+        <div class="name"><%= @serie.title %></div>
         <div class="next-episode mt-2">Próximo episódio: hoje</div>
         <p class="mt-5 mb-0">Seu progresso:</p>
         <div class="progress mt-2" style="height: 25px">
@@ -46,10 +46,17 @@
             <p>Em exibição</p>
           </div>
         </div>
-
-        <%= link_to "", class: "mt-4 btn btn-outline-danger" do %>
-          remover da minha lista  
-          <%= fa_icon "times" %>
+        
+        <% if @exists %>
+          <%= link_to add_or_remove_serie_path(@serie), class: "mt-4 btn btn-outline-danger" do %>
+            remover da minha lista  
+            <%= fa_icon "times" %>
+          <% end %>
+        <% else %>
+          <%= link_to add_or_remove_serie_path(@serie), class: "mt-4 btn btn-outline-success" do %>
+            adicionar a minha lista  
+            <%= fa_icon "check-square" %>
+          <% end %>
         <% end %>
       </div>
     </div>
