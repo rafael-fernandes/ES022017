@@ -5,7 +5,6 @@ RSpec.describe Season, type: :model do
   
   it { should validate_presence_of :name }
   it { should validate_presence_of :number }
-  it { should validate_presence_of :image_path }
 
   it do
     should validate_numericality_of(:number).
