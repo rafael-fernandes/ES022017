@@ -120,6 +120,8 @@ O MVP do projeto pode ser utilizado no link: https://serieflix.herokuapp.com/
 
 ## Storyboard
 
+![](docs/images/storyboard.png)
+
 O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/view/af694e06-a62e-4afa-968b-22f9acab67c5/
 
 ---
