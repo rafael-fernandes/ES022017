@@ -68,7 +68,7 @@ A arquitetura do servidor WEB utilizada foi o MVC (Model-View-Controller). A arq
 
 ## MVP
 
-O MVP do projeto pode ser utilizado no link: https://serieflixbr.herokuapp.com/
+O MVP do projeto pode ser utilizado no link: https://serieflix.herokuapp.com/
 
 ---
 
