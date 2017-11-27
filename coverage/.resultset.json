@@ -15,8 +15,8 @@
         1,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null
       ],
       "/home/rafael/ES022017/app/models/favorite.rb": [
@@ -29,18 +29,20 @@
         1,
         null,
         1,
-        1,
+        2,
+        2,
+        null,
+        2,
+        2,
         null,
         1,
         1,
-        null,
-        1,
-        0,
         null,
         null,
         null
       ],
       "/home/rafael/ES022017/app/models/season.rb": [
+        1,
         1,
         1,
         null,
@@ -52,8 +54,8 @@
         1,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null
       ],
       "/home/rafael/ES022017/app/models/series_list.rb": [
@@ -67,12 +69,12 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        2,
         null,
-        1,
+        2,
         null
       ],
       "/home/rafael/ES022017/app/models/series.rb": [
@@ -89,14 +91,14 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
         null
       ]
     },
-    "timestamp": 1511815560
+    "timestamp": 1511819188
   }
 }

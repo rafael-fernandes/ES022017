@@ -136,6 +136,59 @@ Trabalhar com o desenvolvimento agil foi uma experiência muito boa. A divisão 
 
 ---
 
+## Execução dos Testes
+
+```
+Episode
+  should belong to season
+  should validate that :name cannot be empty/falsy
+  should validate that :number cannot be empty/falsy
+  should validate that :release_date cannot be empty/falsy
+  should validate that :summary cannot be empty/falsy
+  should validate that :number looks like a number greater than or equal to 1
+
+Favorite
+  should belong to series_list
+  should belong to series
+
+Season
+  should belong to series
+  should have many episodes
+  should validate that :name cannot be empty/falsy
+  should validate that :number cannot be empty/falsy
+  should validate that :number looks like a number greater than or equal to 1
+
+SeriesList
+  should have one user
+  should have many series
+
+Series
+  should validate that :title cannot be empty/falsy
+  should validate that :description cannot be empty/falsy
+  should validate that :year cannot be empty/falsy
+  should validate that :image_path cannot be empty/falsy
+  should have many seasons
+
+User
+  should belong to series_list
+  should validate that :name cannot be empty/falsy
+  should validate that :email cannot be empty/falsy
+  should validate that :password cannot be empty/falsy
+
+Finished in 1.32 seconds (files took 3.48 seconds to load)
+24 examples, 0 failures
+
+Coverage report generated for RSpec to /home/rafael/ES022017/coverage. 53 / 53 LOC (100.0%) covered.
+```
+
+---
+
+## Cobertura dos Testes Unitários
+
+![](docs/images/coverage.png)
+
+---
+
 ## Decisões de Projeto
 
 Obs: Como o cliente já havia deixado bastante claro como ele queria o produto, a maior parte das decisões tomadas foram de gerenciamento, como a divisão de tarefas por exemplo.
