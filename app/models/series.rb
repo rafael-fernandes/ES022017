@@ -4,4 +4,5 @@ class Series < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   validates :year, presence: true
+  validates :image_path, presence: true
 end
