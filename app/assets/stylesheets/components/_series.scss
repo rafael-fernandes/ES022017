@@ -1,0 +1,31 @@
+.series {
+  padding-bottom: 6em;
+
+  .title {
+    font-size: 28px;
+    color: rgba(51,51,51,0.8);
+  }
+
+  .series-card {
+    padding-top: 2em;
+    padding-bottom: 1em;
+
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .episode {
+      background-color: #3db39e;
+      padding: .5em;
+      text-align: center;
+      color: $color-white;
+    }
+
+    .name {
+      padding-top: .75em;
+      font-size: 20px;
+      color: rgba(51,51,51,0.8)
+    }
+  }
+}
