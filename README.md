@@ -155,7 +155,6 @@ Não faríamos novamente em projetos futuros: falhas de comunicação, falta de 
 
 ---
 
-
 ## Experiência com o XP e o Scrum
 
 Trabalhar com o desenvolvimento agil foi uma experiência muito boa. A divisão do trabalho em sprints, levando em conta a disponibilidade e o interesse de cada membro da equipe, junto às prioridades para o projeto funcionar com o minimo possivel, foram muito boas para o andamento do projeto. Graças a essa forma, foi possivel desenvolver algo que atenda a maior quantidade de necessidade do cliente em um intervalo de tempo curto e com a menor quantidade de recursos possivel.

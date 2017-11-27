@@ -25,8 +25,11 @@
           </li>
           <li class="nav-item">
             <%= link_to edit_user_registration_path do %>
-              <%= image_tag gravatar_url(current_user.email, 32), class: "rounded-circle ml-1 mt-1" %>
+              <%= image_tag gravatar_url(current_user.email, 32), class: "rounded-circle mt-1 mx-1" %>
             <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sair", destroy_user_session_path, class: "nav-link" %>
           </li>
         <% else %>
           <li class="nav-item">
