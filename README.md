@@ -6,8 +6,8 @@ Grupo: 5
 |----|---------|
 |Amanda Oliveira Alves | 150116276 |
 |Rafael Alves Fernandes| 140030395 |
-|Igor Sodré||
-|Frederico Dib||
+|Igor Sodré|130114553|
+|Frederico Dib|150125925|
 |Guilherme||
 
 ---
