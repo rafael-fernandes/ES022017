@@ -1,0 +1,16 @@
+.login {
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), image-url("4090.jpg");
+  background-size: cover;
+  height: 92vh;
+
+  .card {
+    margin-top: -2em;
+    border-radius: 0px;
+    width: 500px;
+
+    .card-header {
+      font-size: 36px;
+      color: rgba(51,51,51, 0.8);
+    }
+  }
+}

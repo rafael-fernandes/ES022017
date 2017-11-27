@@ -1,9 +1,15 @@
-<footer id="footer">
-	<div class="footer-container">
-		<div >
-			<%= image_tag "serieflix-logo-monocromatica.png", alt: "serieFlix logo", class: "logo-foot"%>
-			<span> todos os direitos reservados </span>
+<footer class="d-flex align-items-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 pr-0">
+				<%= image_tag "serieflix-logo-monocromatica.png", width: "120px", height: "auto" %>
+			</div>
+			<div class="col-sm-4 pl-0">
+				<p class="m-0 mt-2">todos os direitos reservados</p>
+			</div>
+			<div class="col-sm-6" class="pt-2" style="text-align: right">
+				<%= link_to "Sobre", "" %>
+			</div>
 		</div>
-		<span> Sobre </span>
 	</div>
 </footer>
