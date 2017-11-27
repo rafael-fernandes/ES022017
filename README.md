@@ -1,4 +1,18 @@
-﻿## Stakeholders
+﻿## Trabalho Prático de Engenharia de Software
+
+Grupo: 5
+
+|Nome|Matricula|
+|----|---------|
+|Amanda Oliveira Alves | 150116276 |
+|Rafael Alves Fernandes| 140030395 |
+|Igor Sodré||
+|Frederico Dib||
+|Guilherme||
+
+---
+
+## Stakeholders
 
 O cliente deseja uma ferramenta que auxilie cada usuário a acompanhar as séries televisivas de seu interesse. Todo usuário poderá criar um perfil próprio, após preencher alguns dados no formulário, a conta será criada e o usuário usará seu email e sua senha para acessá-la. Através de sua conta o usuário poderá selecionar as séries que acompanha no momento ou que tem intenção de acompanhar, após a seleção ele será notificado sobre novos episódios e poderá visualizar seu progresso em cada série marcada. O usuário também terá a opção de visualizar um calendário (mensal ou semanal) contendo os lançamentos de seu interesse.
 
@@ -111,8 +125,6 @@ O storyboard do projeto pode ser encontrado nesse link: https://xd.adobe.com/vie
 ---
 
 ## Matriz de Rastreabilidade
-
----
 
 ![](docs/images/rastreabilidade.png)
 
