@@ -8,7 +8,7 @@ Grupo: 5
 |Rafael Alves Fernandes| 140030395 |
 |Igor Sodré|130114553|
 |Frederico Dib|150125925|
-|Guilherme Gomes Prandi|150128274|
+|Guilherme Gomes|150128274|
 
 ---
 
